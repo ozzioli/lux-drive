@@ -268,7 +268,6 @@ class _RegisterPageState extends State<RegisterPage> {
                                   color: const Color(0xFFBEA264),
                                   fontWeight: FontWeight.bold,
                                   fontSize: screenWidth * 0.045,
-                                  decoration: TextDecoration.underline,
                                 ),
                               ),
                             ),
@@ -289,7 +288,7 @@ class _RegisterPageState extends State<RegisterPage> {
             right: 0,
             child: Center(
               child: Image.asset(
-                "assets/images/LogoLux.png",
+                "assets/images/logoLux.png",
                 height: screenHeight * 0.14, 
                 fit: BoxFit.contain,
               ),

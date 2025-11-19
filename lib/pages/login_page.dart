@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:luxdrive/pages/welcome_page.dart';
 import 'home_page.dart'; // ← IMPORTE a HomePage
 import 'register_page.dart'; // ← IMPORTE a RegisterPage
 
@@ -143,8 +144,7 @@ class _LoginPageLuxState extends State<LoginPage> {
                         "Esqueceu a senha?",
                         style: TextStyle(
                           color: const Color(0xFFBEA264), 
-                          fontSize: screenWidth * 0.035, 
-                          decoration: TextDecoration.underline,
+                          fontSize: screenWidth * 0.035,
                         ),
                       ),
                     ),
@@ -259,7 +259,6 @@ class _LoginPageLuxState extends State<LoginPage> {
                                   color: const Color(0xFFBEA264),
                                   fontWeight: FontWeight.bold,
                                   fontSize: screenWidth * 0.045,
-                                  decoration: TextDecoration.underline,
                                 ),
                               ),
                             ),
@@ -280,7 +279,7 @@ class _LoginPageLuxState extends State<LoginPage> {
             right: 0,
             child: Center(
               child: Image.asset(
-                "assets/images/LogoLux.png",
+                "assets/images/logoLux.png",
                 height: screenHeight * 0.14, 
                 fit: BoxFit.contain,
               ),
@@ -293,7 +292,10 @@ class _LoginPageLuxState extends State<LoginPage> {
             left: 10,
             child: IconButton(
               icon: const Icon(Icons.arrow_back, color: Colors.white),
-              onPressed: () => Navigator.pop(context),
+              onPressed: () => Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const WelcomePage()),
+      ),
             ),
           ),
         ],
