@@ -11,9 +11,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Lux Drive',
-      home: const SplashScreen(), 
-      debugShowCheckedModeBanner: false, 
+      title: 'LuxDrive',
+      theme: ThemeData(
+        fontFamily: 'CenturyGothic',
+        primaryColor: const Color(0xFFBEA264),
+        textTheme: const TextTheme(
+          bodyLarge: TextStyle(fontFamily: 'CenturyGothic'),
+          bodyMedium: TextStyle(fontFamily: 'CenturyGothic'),
+          titleLarge: TextStyle(fontFamily: 'CenturyGothic'),
+        ),
+      ),
+      home: const SplashScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
