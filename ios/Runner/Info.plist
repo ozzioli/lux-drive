@@ -47,3 +47,5 @@
 	<true/>
 </dict>
 </plist>
+<key>GMSApiKey</key>
+<string>SUA_API_KEY_AQUI</string>
